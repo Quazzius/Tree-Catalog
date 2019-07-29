@@ -1,0 +1,35 @@
+#ifndef TREE_H
+#define TREE_H
+
+using namespace std;
+
+
+class Tree
+{
+    public:
+        Tree(string type, int height, string leaf, string bark){
+            Settype(type);
+            Setheight(height);
+            Setleaf(leaf);
+            Setbark(bark);
+        }
+
+        string Gettype(){return type;}
+        void Settype(int type) {type = val;}
+        int Getheight() { return height; }
+        void Setheight(int val) { height = val; }
+        string Getleaf() { return leaf; }
+        void Setleaf(string val) { leaf = val; }
+        string Getbark() { return bark; }
+        void Setbark(string val) { bark = val; }
+
+    protected:
+
+    private:
+        string treeType;
+        int treeHeight;
+        string leaf;
+        string bark;
+};
+
+#endif // TREE_H

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1564418366 source:/home/j-flan/FRCC/Fall/C++/CppTest/main.cpp
+	<iostream>
+	<string>
+	"Tree.h"
+
+1564417796 /home/j-flan/FRCC/Fall/C++/CppTest/include/Tree.h
+	<string>
+
