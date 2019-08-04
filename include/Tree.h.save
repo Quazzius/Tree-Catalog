@@ -1,5 +1,4 @@
-#ifndef TREE_H
-#define TREE_H
+#include <string>
 
 using namespace std;
 
@@ -7,29 +6,30 @@ using namespace std;
 class Tree
 {
     public:
-        Tree(string type, int height, string leaf, string bark){
-            Settype(type);
-            Setheight(height);
-            Setleaf(leaf);
-            Setbark(bark);
-        }
+    //prototypes
+        //constructors
+        Tree();
+        Tree(string, int, string, string);
 
-        string Gettype(){return type;}
-        void Settype(int type) {type = val;}
-        int Getheight() { return height; }
-        void Setheight(int val) { height = val; }
-        string Getleaf() { return leaf; }
-        void Setleaf(string val) { leaf = val; }
-        string Getbark() { return bark; }
-        void Setbark(string val) { bark = val; }
+        //getters and setters
+        string Gettype();
+        void Settype(string);
+        int Getheight();
+        void Setheight(int);
+        string Getleaf();
+        void Setleaf(string);
+        string Getbark();
+        void Setbark(string);
 
-    protected:
+        //user construct function
+        Tree makeTree();
+
+        //output function
+        void printList(int, Tree *);
 
     private:
         string treeType;
         int treeHeight;
-        string leaf;
-        string bark;
+        string treeLeaf;
+        string treeBark;
 };
-
-#endif // TREE_H

@@ -6,22 +6,26 @@ using namespace std;
 class Tree
 {
     public:
-        Tree(){}
-        Tree(string type, int height, string leaf, string bark){
-            Settype(type);
-            Setheight(height);
-            Setleaf(leaf);
-            Setbark(bark);
-        }
+    //prototypes
+        //constructors
+        Tree();
+        Tree(string, int, string, string);
 
-        string Gettype(){return treeType;}
-        void Settype(string type) {treeType = type;}
-        int Getheight() { return treeHeight; }
-        void Setheight(int height) { treeHeight = height; }
-        string Getleaf() { return treeLeaf; }
-        void Setleaf(string leaf) { treeLeaf = leaf; }
-        string Getbark() { return treeBark; }
-        void Setbark(string bark) { treeBark = bark; }
+        //getters and setters
+        string Gettype();
+        void Settype(string);
+        int Getheight();
+        void Setheight(int);
+        string Getleaf();
+        void Setleaf(string);
+        string Getbark();
+        void Setbark(string);
+
+        //user construct function
+        Tree makeTree();
+
+        //output function
+        void printList(int, Tree);
 
     private:
         string treeType;
