@@ -1,3 +1,18 @@
 pinyon pine 15 needle rough
 oak 25 broad rough
 ash 40 pinnate dimond
+white fir 70 needle rough
+buckeye 35 whorled bumpy
+elm 60 narrow rough
+sequoia 150 pinnately compund shreddy
+oak 55 fiddle smooth
+ -1757502880  
+ -1757502880  
+fir 70 needle shreddy
+juniper 30 awl shreddy
+linden 40 heart rough
+sumac 40 serrate furrowed
+kentucky coffee 70 ovate crazy
+hemlock 70 needle rough
+yew 12 flat needle smooth
+ginko 25 fan smooth

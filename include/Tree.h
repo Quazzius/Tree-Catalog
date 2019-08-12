@@ -6,7 +6,6 @@ using namespace std;
 class Tree
 {
     public:
-    //prototypes
         //constructors
         Tree();
         Tree(string, int, string, string);
@@ -24,8 +23,12 @@ class Tree
         //user construct function
         Tree makeTree();
 
+        //input function
+        Tree writeList(int, Tree);
+
         //output functions
         void printList(int, Tree);
+        int readList();
 
 
     private:

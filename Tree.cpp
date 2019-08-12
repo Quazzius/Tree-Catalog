@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Tree::Tree(){}//default contructor for array initialization
+Tree::Tree(){}//default contructor
 //object constructor
 Tree::Tree(string type, int height, string leaf, string bark){
     Settype(type);
@@ -42,5 +42,32 @@ void Tree::printList(int i, Tree tree){
     cout << "Tree " << i+1 << ": " << tree.Gettype() << ", " << tree.Getheight() << " ft, "
             << tree.Getleaf() << " leaf, " << tree.Getbark() << " bark."<<endl;
 }
+//output list from file
+int Tree::readList(){
 
+    ifstream fout;
+    string line;
+    fout.open("treeFile.txt");
+
+    while (!fout.eof()){
+
+       getline(fout, line);
+       cout << line << endl;
+    }
+    fout.close();
+    return 0;
+}
+//input data to file
+Tree Tree::writeList(int i, Tree tree){
+    //open text file
+    ofstream fin;
+    fin.open("treeFile.txt", ios::app);
+
+    //make tree objects and save to file
+    tree = tree.makeTree();
+    fin << tree.Gettype() << " " << tree.Getheight() << " " << tree.Getleaf() << " " << tree.Getbark() << endl;
+
+    fin.close();
+    return tree;
+}
 

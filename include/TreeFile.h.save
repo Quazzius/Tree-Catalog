@@ -1,0 +1,14 @@
+#ifndef TREEFILE_H
+#define TREEFILE_H
+
+
+class TreeFile
+{
+    public:
+        int readList();
+        void writeList(int, Tree);
+
+    private:
+};
+
+#endif // TREEFILE_H

@@ -24,12 +24,13 @@ class Tree
         //user construct function
         Tree makeTree();
 
-        //write
+        //input function
         void writeList(int, Tree);
-        
+
         //output functions
         void printList(int, Tree);
-        
+        int readList();
+
 
     private:
         string treeType;
