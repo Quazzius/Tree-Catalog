@@ -24,8 +24,9 @@ class Tree
         //user construct function
         Tree makeTree();
 
-        //output function
+        //output functions
         void printList(int, Tree);
+
 
     private:
         string treeType;

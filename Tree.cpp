@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "Tree.h"
 
 using namespace std;
@@ -33,10 +34,13 @@ Tree Tree::makeTree(){
     cout << "leaf type: "; getline(cin, leaf);
     cout << "bark type: "; getline(cin, bark);
     cout << "Height in feet: "; cin >> height; cin.ignore();
-    return (Tree(type, height, leaf, bark));//return object
+    return (Tree(type, height, leaf, bark));
+
 }
 //output tree object
 void Tree::printList(int i, Tree tree){
     cout << "Tree " << i+1 << ": " << tree.Gettype() << ", " << tree.Getheight() << " ft, "
             << tree.Getleaf() << " leaf, " << tree.Getbark() << " bark."<<endl;
 }
+
+
