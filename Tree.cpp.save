@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Tree::Tree(){}//default contructor for array initialization
+Tree::Tree(){}//default contructor
 //object constructor
 Tree::Tree(string type, int height, string leaf, string bark){
     Settype(type);
@@ -49,6 +49,8 @@ int Tree::readList(){
     string line;
     fout.open("treeFile.txt");
 
+    cout << "\nComplete tree list:" << endl;
+    printf("%8s%10s%12s%15s%15s\n", "Name", "Ft.", "Leaf", "Bark", "Date");
     while (!fout.eof()){
 
        getline(fout, line);
@@ -59,15 +61,41 @@ int Tree::readList(){
 }
 //input data to file
 Tree Tree::writeList(int i, Tree tree){
-    //open text file
-    ofstream fin;
-    fin.open("treeFile.txt", ios::app);
-    
+    //open text file with format option
+    FILE * fin;
+    fin = fopen("treeFile.txt", "a");//open to append
+
+    //get date
+    time_t now = time(0);
+    // convert now to string form
+    char* dt = ctime(&now);
     //make tree objects and save to file
     tree = tree.makeTree();
-    fin << tree.Gettype() << " " << tree.Getheight() << " " << tree.Getleaf() << " " << tree.Getbark() << endl;
+    fprintf(fin, "%10s%5d%15s%15s%30s\n" ,tree.Gettype().c_str(), tree.Getheight(), tree.Getleaf().c_str(), tree.Getbark().c_str(), dt);
 
-    fin.close();
+    fclose(fin);
     return tree;
+}
+void Tree::searchList(){
+
+    ifstream fout;
+    string line;
+    string s;
+
+    cout << "\nEnter search criteria:  ";
+    cin >> s;
+    fout.open("treeFile.txt");
+    printf("%8s%10s%12s%15s%15s\n", "Name", "Ft.", "Leaf", "Bark", "Date");
+    size_t pos;
+    while (!fout.eof()){
+
+       getline(fout, line);
+       pos = line.find(s);
+       if (pos != string::npos){
+        cout << line << endl;
+       }
+    }
+    cout << endl;;
+    fout.close();
 }
 

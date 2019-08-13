@@ -1,18 +1,12 @@
-pinyon pine 15 needle rough
-oak 25 broad rough
-ash 40 pinnate dimond
-white fir 70 needle rough
-buckeye 35 whorled bumpy
-elm 60 narrow rough
-sequoia 150 pinnately compund shreddy
-oak 55 fiddle smooth
- -1757502880  
- -1757502880  
-fir 70 needle shreddy
-juniper 30 awl shreddy
-linden 40 heart rough
-sumac 40 serrate furrowed
-kentucky coffee 70 ovate crazy
-hemlock 70 needle rough
-yew 12 flat needle smooth
-ginko 25 fan smooth
+
+
+            Oak   30         Fiddle          Rough     Tue Aug 13 11:29:14 2019
+
+            oak   50          sharp          bumpy     Tue Aug 13 11:29:44 2019
+
+            Ash   40        Pinnate        Diamond     Tue Aug 13 11:30:09 2019
+
+          Maple   40         simple         smooth     Tue Aug 13 11:30:25 2019
+
+        Sequoia  180        pinnate        Shreddy     Tue Aug 13 11:30:51 2019
+

@@ -29,6 +29,7 @@ class Tree
         //output functions
         void printList(int, Tree);
         int readList();
+        void searchList();
 
 
     private:
